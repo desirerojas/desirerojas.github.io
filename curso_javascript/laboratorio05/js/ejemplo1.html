@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo 1</title>
+    <script type="text/javascript">
+    //Desarrollar un aplicacion que permita mostrar la estacion del año de acuerdo al numero,
+    //ingresado.
+    // cantidad variables --> 2
+    //tpo de datos variables -->entero ,texto
+    //nombres de variables -->est,men
+    //numero de condiciones --> 4
+    //condiciones--> si(est=1) --> si(est=2)--> si(est=3)-->si(est=4)
+    //operacion -->
+    //variable a leer-->est
+    //definiendo  e inicializando variables
+    var est=0, men="";
+    //capturanco valores
+    est=parseInt(prompt("ingrese el numero de estacion 1 o 2 o 3 o 4:"));
+    //condicion
+    if (est==1){
+        men="Verano";
+    }else { 
+        if(est==2){
+            men="Otoño";
+        }else{
+            if(est==3){
+                men="Invierno";
+            }else{
+                if(est==4){
+                    men="Primavera";
+                }else{
+                    men="No es un numero valido";
+                }
+            }
+        }
+    }
+    alert("La estacion es:"+men);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

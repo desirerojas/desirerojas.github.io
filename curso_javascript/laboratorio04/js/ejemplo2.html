@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo 2 </title>
+    <script type="text/javascript">
+    //Desarrollar un aplicacion que ingresar 4 notas y calcule el promedio 
+    //final de acuerdo a la siguiente formula :prom=(n1+(n2*n2)+n3+(3*n4))/7.
+    //si el promedio es mayor o igual a 13 se mostrara un mensaje indicando 
+    //"aprobado" en caso contrario se mostrara un mensaje indicando "desaprobado"
+    //Cantidad de variables   -->6
+    //Tipo de datos variables -->real,texto
+    //Nombres de variables    --> n1,n2,n3,n4,prom,men
+    //Condicion               -->si (edad >=13)entonces
+    //Operacion               -->prom=(n1+(2*n2)+n3+(3*n4))/7.
+    //Variables a leer        -->n1,n2,n3,n4
+    //definiendo e inicializando valores
+    var n1=0,n2=0,n3=0,n4=0,prom=0,men="";
+    //capturando valores
+    n1=parseFloat(prompt("Ingrese la nota 1:"));
+    n2=parseFloat(prompt("Ingrese la nota 2:"));
+    n3=parseFloat(prompt("Ingrese la nota 3:"));
+    n4=parseFloat(prompt("Ingrese la nota 4:"));
+    //realizando operaciones
+    prom=(n1+(2*n2)+n3+(3*n4))/7;
+    //condicion
+    if (prom>=18){
+        men="Aprobado";
+    }else{
+        men="Desaprobado";
+    }
+    //mostrando resultados
+    document.write("el promedio es:"+prom +"<br>");
+    document.write(men);
+
+    </script>
+         
+</head>
+<body>
+    
+</body>
+</html>

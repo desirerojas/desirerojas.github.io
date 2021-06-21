@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo3</title>
+    <script type="text/javascript">
+    //desarrollar un aplicacion que te permita calcular el area de un 
+    //rectangulo.Si el area del rectangulo es mayor a 100 se mostrara
+    //un mensaje indicando"es un rectangulo grabde" en caso
+    //contrario de mostrar un mensaje indicando es un rectangulo pequeño
+    //Cantidad de variables   -->4
+    //Tipo de datos variables -->real,texto
+    //Nombres de variables    --> bas,alt,area,men
+    //Condicion               -->si (area>=100)entonces
+    //Operacion               -->area =bas*alt
+    //Variables a leer        -->bas,alt
+    //definiendo e inicializando valores
+    var bas=0; alt=0;area=0;men="";
+    //capturando valores
+    bas=parseFloat(prompt("Ingrese la base del rectrangulo:"));
+    alt=parseFloat(prompt("Ingrese la altura del rectangulo:"));
+    //realizando operaciones 
+    area=bas*alt;
+    //condicion
+    if (area>100){
+        men="Es un rectangulo grande";
+    }else{
+        men="Es un rectangulo pequeño";
+    }
+    //mostrando resultados
+    alert("El area del rectangulo es:"+area);
+    alert(men);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

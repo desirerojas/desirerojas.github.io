@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+    <script type="text/javascript">
+    //Desarrollar una aplicacion que permita calclar el 
+    //area de un cuadrado si se sabe que se debe ingresar,
+    //si se sabe que se debe de ingresar su lado .si el aerea es 
+    //mayor a 100 entonces se mostrara un mensaje indicando
+    //"Es un cuadrado grande". Mostrar todos los resultados.
+    //numero de variables -->3
+    //tipo de variables   -->entero,texto
+    //nombre de variables -->lad,area,men
+    //condicion           -->si (area>=100)entonces
+    //operacion           -->area=lad*lad;
+    //variables a leer    -->lad
+    //definiendo e inicializando variables
+    var lad=0, area=0, men="";
+    //capturando operaciones
+    lad=parseInt(prompt("Ingrese el lado del cuadrado:"));
+    //realizando operaciones
+    area=lad*lad;
+    //condicion
+    if (area>100){
+        men="Es un cuadrado grande";
+    }
+    //montrando resultados
+    document.write("El area del cuadrado es:"+area+"<br>");
+    document.write(men);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

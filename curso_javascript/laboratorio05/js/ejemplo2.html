@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO 2</title>
+    <script type="text/javascript">
+    //Desarrollar un aplicacion que ingresar una letra y de acuerdo a la letre ingresadamostrar
+    //un mensaje correspondiente al turno
+    // cantidad variables --> 2
+    //tpo de datos variables -->entero ,texto
+    //nombres de variables -->TUR,men
+    //numero de condiciones --> 4
+    //condiciones--> si(tur="m") --> si(tur="t")--> si(tur="n")
+    //operacion -->
+    //variable a leer-->tur
+    //declarando e inicializando variables
+    var tur="" , men="";
+    //capturando valores
+    tur=prompt("Ingrese el turno M o T o N:");
+    //condicion 
+    if(tur=="m"){
+        men="Manaña"; 
+    }else{
+        if(tur=="t"){
+            men="Tarde";
+        }else {
+            if(tur=="n"){
+                men="Noche";
+            }else{
+                men="No es una letra valida";
+            }
+        }
+    }
+    //mostrando resultados 
+    alert ("El turno es:"+men);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
